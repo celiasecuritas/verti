@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+          <!-- CSS -->
+    <link rel="stylesheet" href="./sass/style.css" >
+      <!-- Favicon -->
+    <link rel="icon" href="./img/verisure.svg">
+    <title>Securitas Direct - Verti</title>
+</head>
+<body class="body">
+    <header class="header">
+        <article class="header__article">
+          <h1 class="header__title">
+            Protege tu hogar frente al robo con la alarma de Securitas Direct
+          </h1>
+        
+        </article>  
+      </header>
+    <main class="main">
+        <section class="main__section">  
+            
+           <img class="main__image" src="./img/bodegon_securitas.png" alt="Bodegon securitas"> 
+           <h3 class="main__title">Solicita tu estudio de seguridad gratuito</h3>
+            <form class='form'  method="POST" >
+                <h5 class='form__title'>Envíanos tu número de teléfono y te llamaremos lo antes posible <i class="fa-solid fa-phone-volume"></i></h5>
+                <div class='form__inputBox'>
+                  <input
+                    id='name'
+                    class='form__input'
+                    name="nombre"
+                    type='text'
+
+                    required
+                  />
+                  <label htmlFor='name' class='form__label'>
+                    Nombre
+                  </label>
+                </div>
+        
+                <div class='form__inputBox'>
+                  <input
+                   maxLength="9"
+                    id='telephone'
+                    name="telefono"
+                    class='form__input'
+                    type='text'
+                    required
+                  />
+                  <label htmlFor='telephone' class='form__label'>
+                    Teléfono
+                  </label>
+                </div>
+                <div class="checkbox-wrapper-2 form__div-checkbox">
+                  <input
+                    type="checkbox"
+                    class="input__check"
+                    name="privacy"
+                    id="privacy"
+                required
+                  />
+                  <label class="form__labelcheckbox " is-required for="privacy">
+                    Marcando esta casilla acepto la
+                    <a
+                      class="form__privacy"
+                      href="https://alianzassd.com/verti/politica-de-privacidad"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    política de privacidad
+                    </a>
+                  </label>
+                  </div>
+                
+                <button class='form__enter' type='submit'>
+                  Enviar
+                </button>
+            </form>
+            <article class="main__contact">
+                <h4 class="main__contact__title">Para más información puedes llamar al</h4>
+                <i class="fas fa-phone main__contact__icon"></i>
+                <a class="main__contact__link" href="tel:+900 11 00 77">900 11 00 77</a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer__logo" src="./img/logo-securitas.svg" alt="Logo Securitas Direct">
+        <p class="footer__parragraph">RNSP: 2737</p> 
+        <a class="footer__privacy"
+        href="https://alianzassd.com/verti/politica-de-privacidad" target="_blank" rel="noopener noreferrer">
+        política de privacidad</a>
+    </footer>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
