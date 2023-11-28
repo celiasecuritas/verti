@@ -79,7 +79,7 @@
 }
 .main__section {
   margin: 0 auto 0 auto;
-  padding: 40px 10px;
+  padding: 20px 10px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 0 50px 0px 50px;
@@ -88,6 +88,7 @@
 }
 @media screen and (min-width: 740px) {
   .main__section {
+    padding: 40px 10px 20px 10px;
     border-radius: 0 80px 0px 80px;
   }
 }
@@ -104,7 +105,7 @@
 @media screen and (min-width: 740px) {
   .main__title {
     border-radius: 0 15px 0px 15px;
-    max-width: 400px;
+    max-width: 420px;
     font-size: 18px;
   }
 }
@@ -113,8 +114,24 @@
   width: 100%;
   margin: 0 auto;
 }
-.main__contact__title {
+.main__contact__p {
+  letter-spacing: 0.5px;
+  margin: 0 auto 20px auto;
+  padding: 0 10px;
+  max-width: 430px;
+  line-height: 20px;
+  font-weight: 400;
   color: black;
+  font-size: 14px;
+}
+.main__bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+.main__contact__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
   font-weight: 400;
 }
 .main__contact__icon {
@@ -127,6 +144,14 @@
   color: rgb(99, 100, 102);
   font-size: 25px;
   font-weight: 800;
+}
+.main__red {
+  color: rgb(255, 0, 51);
+  font-size: 14px;
+}
+.main__legal {
+  margin-top: 20px;
+  font-size: 12px;
 }
 
 /* * ============ FORM ========== */
@@ -156,7 +181,7 @@
 }
 .form__inputBox {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   margin: 0 auto;
   position: relative;
 }
@@ -225,7 +250,6 @@
   color: rgb(0, 0, 0);
 }
 .form__div-checkbox {
-  max-width: 400px;
   text-align: start;
   letter-spacing: 1px;
   display: flex;
@@ -237,9 +261,9 @@
   transition: background-color 0.3s ease;
   width: 100%;
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 400;
+  font-weight: 600;
 }
 .form__privacy {
   display: inline;
@@ -257,7 +281,7 @@
   border-radius: 72px;
   flex-shrink: 0;
   height: 13px;
-  margin: 3px auto;
+  margin: 3px auto 0 6px;
   position: relative;
   width: 32px;
   cursor: pointer;
@@ -301,18 +325,22 @@
   }
 }
 .footer__logo {
-  width: 120px;
+  height: 60px;
   margin: 20px 0 10px 0;
 }
 @media screen and (min-width: 740px) {
   .footer__logo {
     margin: 30px 0 10px 0;
+    height: 70px;
   }
 }
 .footer__parragraph {
+  font-size: 12px;
   color: rgb(99, 100, 102);
 }
 .footer__privacy {
-  color: rgb(99, 100, 102);
   margin: 5px 0 40px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(99, 100, 102);
 }/*# sourceMappingURL=style.css.map */

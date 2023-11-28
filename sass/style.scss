@@ -81,13 +81,14 @@ $color-white: rgb(255, 255, 255);
 
   &__section { 
     margin: 0 auto 0 auto;
-    padding: 40px 10px ;
+    padding: 20px 10px ;
     text-align: center;
     background-color: rgb(255 255 255 / 75%);
      border-radius: 0 50px 0px 50px;
     width: 90%;
     max-width: 700px;
     @media screen and (min-width: 740px) {
+      padding: 40px 10px 20px 10px;
       border-radius: 0 80px 0px 80px;
     }
   }
@@ -103,7 +104,7 @@ $color-white: rgb(255, 255, 255);
     margin: 10px auto  20px auto;
     @media screen and (min-width: 740px) {
       border-radius: 0 15px 0px 15px;
-      max-width: 400px;
+      max-width: 420px;
       font-size: 18px;
     }
   }
@@ -114,10 +115,29 @@ $color-white: rgb(255, 255, 255);
     margin: 0 auto;
   }
 
+  &__contact__p {
+    letter-spacing: 0.5px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+    max-width: 430px;
+    line-height: 20px;
+     font-weight: 400;
+       color: black;
+       font-size: 14px;
+  }
+
+  &__bold {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
 
   &__contact__title {
-   color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
     font-weight: 400;
+
   }
 
   &__contact__icon {
@@ -132,6 +152,17 @@ $color-white: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: 800;
   }
+
+  &__red {
+    color: $color-red;
+    font-size: 14px;
+  }
+  
+  &__legal {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
 }
 
 
@@ -163,7 +194,7 @@ $color-white: rgb(255, 255, 255);
 
   &__inputBox {
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto;
     position: relative;
   }
@@ -239,29 +270,21 @@ $color-white: rgb(255, 255, 255);
   }
 
   &__div-checkbox {
-    max-width: 400px;
     text-align: start;
     letter-spacing: 1px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    // @media screen and (min-width: 740px) {
-    //   align-items: center;
-    // }
   }
 
   &__labelcheckbox {
     transition: background-color 0.3s ease; 
     width: 100%;
     margin-left: 10px;
-    font-size: 15px;
-   color: rgba(0, 0, 0, 0.8);
-    font-weight: 400; 
-    // @media screen and (min-width: 740px) {
-    //   font-size: 18px;
-    // }
-
+    font-size: 16px;
+     color: rgba(0, 0, 0, 0.8);
+    font-weight: 600; 
   }
   &__privacy {
     display: inline;
@@ -270,6 +293,8 @@ $color-white: rgb(255, 255, 255);
    
   }
 
+
+ 
 }
 
 
@@ -283,7 +308,7 @@ $color-white: rgb(255, 255, 255);
   // border-style: none;
   flex-shrink: 0;
   height: 13px;
-  margin: 3px auto;
+  margin: 3px auto 0 6px;
   position: relative;
   width: 32px;
   cursor: pointer;
@@ -332,20 +357,26 @@ $color-white: rgb(255, 255, 255);
     justify-content: center;
   }
   &__logo {
-    width: 120px;
+    height: 60px;
     margin: 20px 0 10px 0;
     @media screen and (min-width: 740px) {
       margin: 30px 0 10px 0;
+      height: 70px;
     }
   }
 
   &__parragraph{
+ 
+    font-size: 12px;
     color: $color-dark-grey;
   }
 
-  &__privacy {
+  &__privacy {   
+     margin: 5px 0 40px 0;
+    cursor: pointer;
+    font-size: 14px;
     color: $color-dark-grey;
-    margin: 5px 0 40px 0;
+   
   }
 }
 
