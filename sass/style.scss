@@ -3,6 +3,15 @@ $color-grey: rgb(220, 213, 204);
 $color-dark-grey: rgb(99, 100, 102);
 $color-white: rgb(255, 255, 255);
 
+
+@font-face {
+  font-family: 'FuenteVerti';
+  src: url('../fuentes/CoconRegularFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -25,14 +34,14 @@ $color-white: rgb(255, 255, 255);
 
   &__article {
     position: relative;
-    width: 232px;
-    height: 179px;
+    width: 198px;
+    height: 148px;
     border-bottom-right-radius: 293px;
-    background-color: $color-red;
+    background-color: rgb(255, 0, 51);
     @media screen and (min-width: 740px) {
-      width: 258px;
-      height: 214px;
-    border-bottom-right-radius: 245px;
+      width: 226px;
+      height: 182px;
+      border-bottom-right-radius: 245px;
     }
     @media screen and (min-width: 1024px) {
       width: 265px;
@@ -43,18 +52,18 @@ $color-white: rgb(255, 255, 255);
 
   &__title {
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    max-width: 213px;
-    padding-top: 19px;
-    padding-left: 14px;
+    max-width: 179px;
+    padding-top: 10px;
+    padding-left: 12px;
     text-align: start;
     @media screen and (min-width: 740px) {
-      font-size: 23px;
-      max-width: 214px;
-      padding-top: 19px;
-      padding-left: 18px;
+      font-size: 21px;
+    max-width: 214px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
     @media screen and (min-width: 1024px) {
@@ -73,62 +82,87 @@ $color-white: rgb(255, 255, 255);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 130px 0 100px 0;
+  padding: 100px 0 20px 0;
+   min-height: 80vh;
   @media screen and (min-width: 740px) {
-     padding: 100px 0 100px 0 ;
+     padding: 100px 0 50px 0 ;
+    
   }
+
+  @media screen and (min-width: 1024px) {
+    padding: 70px 0 50px 0 ;
+   
+ }
+ 
   
 
   &__section { 
     margin: 0 auto 0 auto;
-    padding: 20px 10px ;
+    padding: 55px 10px 20px 10px;
     text-align: center;
     background-color: rgb(255 255 255 / 75%);
      border-radius: 0 50px 0px 50px;
     width: 90%;
     max-width: 700px;
     @media screen and (min-width: 740px) {
-      padding: 40px 10px 20px 10px;
+      padding: 55px 10px 20px 10px;
       border-radius: 0 80px 0px 80px;
     }
   }
 
   &__title {
     font-size: 16px;
-    background-color: $color-red;
+    background-color: $color-dark-grey;
     border-radius: 0 20px 0px 20px;
     max-width: 215px;
     color: white;
     font-weight: 500;
     padding: 12px 10px;
     margin: 10px auto  20px auto;
+
     @media screen and (min-width: 740px) {
       border-radius: 0 15px 0px 15px;
-      max-width: 420px;
+      max-width: 363px;
+      font-size: 14px;
+    }
+  }
+
+  &__verti {
+    padding-top: 4px;
+    height: 23px;
+    @media screen and (min-width: 740px) {
+      padding-top: 5px;
+      height: 23px;
+    }
+  }
+
+  &__offer {
+    letter-spacing: 0.5px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+    max-width: 520px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+       @media screen and (min-width: 740px) {
+        font-size: 25px;
+      }
+  }
+
+  &__offer-sub {
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    @media screen and (min-width: 740px) {
       font-size: 18px;
     }
   }
 
-  &__image {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  &__contact__p {
-    letter-spacing: 0.5px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
-    max-width: 430px;
-    line-height: 20px;
-     font-weight: 400;
-       color: black;
-       font-size: 14px;
-  }
-
   &__bold {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 800;
   }
 
 
@@ -143,50 +177,60 @@ $color-white: rgb(255, 255, 255);
   &__contact__icon {
     margin-right: 5px;
     color: rgb(76 77 79);
-    font-size: 20px;
+    font-size: 15px;
   }
 
   &__contact__link {
     text-decoration: none;
     color: $color-dark-grey;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 800;
   }
 
   &__red {
     color: $color-red;
-    font-size: 14px;
   }
+
+  &__asterisco {
+    color: $color-red;
+    font-weight: 200;
+  }
+  
   
   &__legal {
     margin-top: 20px;
     font-size: 12px;
   }
 
+
 }
 
 
+.prueba-verti {
+  letter-spacing: -0.5px;
+  font-size: 27px;
+    color: #717074;
+  font-family: 'FuenteVerti', sans-serif;
+}
 /* * ============ FORM ========== */
 
 .form {
 
   width: 90%;
-  margin:  10px auto 30px auto;
+  margin:  10px auto 15px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 26px;
 
   &__title {
-    max-width: 400px;
-   text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #171717;
-    display: block;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+  font-weight: 400;
+  color: black;
     @media screen and (min-width: 740px) {
       font-size: 16px;
     }
@@ -201,30 +245,30 @@ $color-white: rgb(255, 255, 255);
 
   &__input {
     width: 100%;
-    height: 45px;
+    height: 38px;
     padding: 10px 5px 10px 5px;
     outline: none;
     border: none;
     color: #000;
     font-size: 20px;
     background: transparent;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
     transition: 0.1s;
     border-bottom-left-radius: 8px;
   
 
     &:focus,
     &:valid {
-      border: 2px solid #000;
+      border: 1px solid #000;
       border-radius: 8px;
 
       + .form__label {
-        transform: translateY(-25px);
+        transform: translateY(-15px);
         left: auto;
         right: 10px;
-        font-size: 14px;
-        padding: 10px 10px;
+        font-size: 12px;
+        padding: 5px 10px;
         background: #000;
         letter-spacing: 0.2em;
         font-weight: 500;
@@ -244,7 +288,7 @@ $color-white: rgb(255, 255, 255);
     margin-left: 10px;
     padding: 10px;
     pointer-events: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     text-transform: uppercase;
     transition: 0.5s;
@@ -255,7 +299,7 @@ $color-white: rgb(255, 255, 255);
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     cursor: pointer;
     transition: 0.5s;
     text-transform: uppercase;
@@ -292,6 +336,7 @@ $color-white: rgb(255, 255, 255);
     text-decoration: none;
    
   }
+
 
 
  
@@ -360,7 +405,7 @@ $color-white: rgb(255, 255, 255);
     height: 60px;
     margin: 20px 0 10px 0;
     @media screen and (min-width: 740px) {
-      margin: 30px 0 10px 0;
+      margin: 15px 0 10px 0;
       height: 70px;
     }
   }
