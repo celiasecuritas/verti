@@ -2,7 +2,8 @@ $color-red: rgb(255, 0, 51);
 $color-grey: rgb(220, 213, 204);
 $color-dark-grey: rgb(99, 100, 102);
 $color-white: rgb(255, 255, 255);
-$color-verti: #f50;
+$color-verti: #ff5500;
+$color-orange: #ff9000;
 
 
 
@@ -211,7 +212,10 @@ $color-verti: #f50;
 
 .text-verti {
   letter-spacing: -0.5px;
-    color: $color-verti;
+  background: linear-gradient(135deg, $color-verti, $color-orange 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: 'FuenteVerti', sans-serif;
 }
 /* * ============ FORM ========== */
