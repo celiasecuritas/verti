@@ -190,10 +190,9 @@
   font-size: 12px;
 }
 
-.prueba-verti {
+.text-verti {
   letter-spacing: -0.5px;
-  font-size: 27px;
-  color: #717074;
+  color: #f50;
   font-family: "FuenteVerti", sans-serif;
 }
 

@@ -2,6 +2,9 @@ $color-red: rgb(255, 0, 51);
 $color-grey: rgb(220, 213, 204);
 $color-dark-grey: rgb(99, 100, 102);
 $color-white: rgb(255, 255, 255);
+$color-verti: #f50;
+
+
 
 
 @font-face {
@@ -206,10 +209,9 @@ $color-white: rgb(255, 255, 255);
 }
 
 
-.prueba-verti {
+.text-verti {
   letter-spacing: -0.5px;
-  font-size: 27px;
-    color: #717074;
+    color: $color-verti;
   font-family: 'FuenteVerti', sans-serif;
 }
 /* * ============ FORM ========== */
