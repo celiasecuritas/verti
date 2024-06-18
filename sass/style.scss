@@ -114,23 +114,7 @@ $color-orange: #ff9000;
     }
   }
 
-  &__title {
-    font-size: 16px;
-    background-color: $color-dark-grey;
-    border-radius: 0 20px 0px 20px;
-    max-width: 215px;
-    color: white;
-    font-weight: 500;
-    padding: 12px 10px;
-    margin: 10px auto  20px auto;
-
-    @media screen and (min-width: 740px) {
-      border-radius: 0 15px 0px 15px;
-      max-width: 363px;
-      font-size: 14px;
-    }
-  }
-
+ 
   &__verti {
     padding-top: 4px;
     height: 23px;
@@ -145,12 +129,13 @@ $color-orange: #ff9000;
     margin: 0 auto 20px auto;
     padding: 0 10px;
     max-width: 520px;
-    line-height: 30px;
+    line-height: 24px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
        @media screen and (min-width: 740px) {
-        font-size: 25px;
+        line-height: 26px;
+        font-size: 20px;
       }
   }
 
